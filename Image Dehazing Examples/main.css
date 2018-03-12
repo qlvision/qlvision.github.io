@@ -1,0 +1,78 @@
+BODY {
+	TEXT-ALIGN: center; MARGIN: 0px auto; FONT-FAMILY: Verdana, sans-serif; MAX-WIDTH: 960px; BACKGROUND: #fff; COLOR: #303030
+}
+TABLE {
+	TEXT-ALIGN: center; BACKGROUND-COLOR: #ffffff
+}
+A {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #1f82a9; CURSOR: pointer; TEXT-DECORATION: underline
+}
+A:link {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #1f82a9; CURSOR: pointer; TEXT-DECORATION: underline
+}
+A:visited {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #1f82a9; CURSOR: pointer; TEXT-DECORATION: underline
+}
+A:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #006699; TEXT-DECORATION: underline
+}
+IMG {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+H1 {
+	FONT-FAMILY: Cambria, Helvetica, Arial, Verdana, san-serif
+}
+H2 {
+	FONT-FAMILY: Cambria, Helvetica, Arial, Verdana, san-serif
+}
+H3 {
+	FONT-FAMILY: Cambria, Helvetica, Arial, Verdana, san-serif
+}
+.style1 {
+	TEXT-ALIGN: center
+}
+.style2 {
+	TEXT-ALIGN: left
+}
+.style3 {
+	COLOR: #0000ff; FONT-SIZE: large
+}
+.style4 {
+	VERTICAL-ALIGN: top
+}
+.style5 {
+	TEXT-ALIGN: left; COLOR: #0000ff; FONT-SIZE: large
+}
+.style7 {
+	TEXT-ALIGN: center; FONT-SIZE: large
+}
+.auto-style1 {
+	TEXT-ALIGN: center; FONT-FAMILY: Cambria, Cochin, Georgia, Times, "Times New Roman", serif
+}
+.auto-style2 {
+	FONT-FAMILY: Cambria, Cochin, Georgia, Times, "Times New Roman", serif
+}
+.auto-style3 {
+	FONT-FAMILY: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; FONT-WEIGHT: bold
+}
+.auto-style4 {
+	TEXT-ALIGN: left; FONT-FAMILY: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; COLOR: #0000ff; FONT-SIZE: large
+}
+.auto-style5 {
+	TEXT-ALIGN: left; FONT-FAMILY: Cambria, Cochin, Georgia, Times, "Times New Roman", serif
+}
+.auto-style6 {
+	FONT-FAMILY: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; COLOR: #0000ff; FONT-SIZE: large
+}
+.auto-style7 {
+	TEXT-ALIGN: center; FONT-FAMILY: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; FONT-SIZE: large
+}
+.auto-style8 {
+	BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px
+}
+.auto-style9 {
+	FONT-FAMILY: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; FONT-SIZE: x-large
+}
+.auto-style10 {
+	TEXT-ALIGN: center; VERTICAL-ALIGN: top
+}
