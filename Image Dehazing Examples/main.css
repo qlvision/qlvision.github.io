@@ -20,13 +20,13 @@ IMG {
 	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
 }
 H1 {
-	FONT-FAMILY: Cambria, Helvetica, Arial, Verdana, san-serif
+	FONT-FAMILY: Cambria, Helvetica, Arial, Verdana, san-serif;font-size: 36px;
 }
 H2 {
-	FONT-FAMILY: Cambria, Helvetica, Arial, Verdana, san-serif
+	FONT-FAMILY: Cambria, Helvetica, Arial, Verdana, san-serif;font-size: 24px;
 }
 H3 {
-	FONT-FAMILY: Cambria, Helvetica, Arial, Verdana, san-serif
+	FONT-FAMILY: Cambria, Helvetica, Arial, Verdana, san-serif;font-size: 14px;
 }
 .style1 {
 	TEXT-ALIGN: center
