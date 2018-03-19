@@ -5,56 +5,6 @@
 <META content="text/html; charset=UTF-8" http-equiv=Content-Type><LINK 
 rel=stylesheet href="Image%20Dehazing%20Examples/main.css" media=all>
 <META name=GENERATOR content="MSHTML 8.00.7601.19058">
-	<style type="text/css">
-		.centre {
-		margin-left: auto;
-		margin-right: auto;
-		display: block
-		}
-        .small_title {
-        text-align: center;
-        color: #5FC1C9;
-        font-size: 36px;
-        font-family: Tahoma, Geneva, sans-serif;
-        }
-        .contents {
-        text-align: center;
-        color: #FFE366;
-        font-size: 18px;
-        font-family: Tahoma, Geneva, sans-serif;
-        }
-        .title {
-        text-align: center;
-        font-family: Tahoma, Geneva, sans-serif;
-        font-size: 36px;
-        color: #FFE366;
-        }
-        .descp {
-        text-align: center;
-        font-family: Tahoma, Geneva, sans-serif;
-        font-size: 16px;
-        color: #CCC;
-        }
-        .sub_title {
-        text-align: center;
-        color: #EEE;
-        font-family: Tahoma, Geneva, sans-serif;
-        font-size: 20px;
-        }
-
-        .names {
-        font-family: Tahoma, Geneva, sans-serif;
-        font-size: 24px;
-        color: #8EBC8C;
-        }
-        .table_title {
-        font-family: Tahoma, Geneva, sans-serif;
-        color: #5FC1C9;
-        }
-        .airlight {
-        font-family: "Times New Roman", Times, serif;
-        }
-    </style>
 </HEAD>
 <BODY style="MAX-WIDTH: 1280px">
 <script type="text/javascript">
@@ -86,8 +36,8 @@ rel=stylesheet href="Image%20Dehazing%20Examples/main.css" media=all>
   <td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_gt.bmp" width="700"></div></td>
   <td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_trans.bmp" width="700"></div></td>
   <TR align=middle>
-    <TD>Dehazed image</TD>
-	<TD>Estimated transmision map</TD></TR>
+    <TD>Dehazed image(click below)</TD>
+	<TD>Estimated transmision map(click below)</TD></TR>
   <TR>
   <td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_our.bmp" width="700"  img="img" id="chshowr"></div></td>
   <td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_our_t.bmp" width="700" img="img" id="chshowt"></div></td>
@@ -110,8 +60,6 @@ rel=stylesheet href="Image%20Dehazing%20Examples/main.css" media=all>
 	<td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_cap.bmp" width="200" onclick="display('chshowr','Image%20Dehazing%20Examples/church/church_cap.bmp')"></div></td>
 	<td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_cnn.bmp" width="200" onclick="display('chshowr','Image%20Dehazing%20Examples/church/church_cnn.bmp')"></div></td>
 	<td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_nld.bmp" width="200" onclick="display('chshowr','Image%20Dehazing%20Examples/church/church_nld.bmp')"></div></td></TR>
-  <TR>
-    <TD>&nbsp;</TD></TR>
   <TR>
 	<td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_our_t.bmp" width="200" onclick="display('chshowt','Image%20Dehazing%20Examples/church/church_our_t.bmp')"></div></td>
 	<td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_he_t.bmp" width="200" onclick="display('chshowt','Image%20Dehazing%20Examples/church/church_he_t.bmp')"></div></td>
@@ -175,7 +123,6 @@ rel=stylesheet href="Image%20Dehazing%20Examples/main.css" media=all>
 <P>&nbsp;</P>
 <P>&nbsp;</P>
 <P align=left>Dense haze removal</P>
-<P>&nbsp;</P>
 <TABLE align=center>
   <TBODY>
   <TR align=middle>
@@ -222,6 +169,83 @@ rel=stylesheet href="Image%20Dehazing%20Examples/main.css" media=all>
 <P>&nbsp;</P>
 <P>&nbsp;</P>
 <P align=left >JPEG artifact suppression</P>
+<TABLE align=center>
+  <TBODY>
+  <TR align=middle>
+    <TD>Haze image</TD>
+    <TD>Dehazing result(click below)</TD></TR>
+  <TR>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg1.jpg" width="700"></div></td>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg1_our.bmp" width="700" img="img" id="jpeg1show"></div></td>
+  </TBODY></TABLE>
+<div align="center">
+<table width="800" border="0">
+  <TBODY>
+  <TR align=middle>
+    <TD>Our final result</TD>
+	<TD>Our direct inversion</TD>
+	<TD>Li</TD>
+    <TD>Chen</TD></TR>
+  <TR>
+  	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg1_our.bmp" width="200" onclick="display('jpeg1show','Image%20Dehazing%20Examples/jpeg/jpeg1_our.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg1_ourdv.bmp" width="200" onclick="display('jpeg1show','Image%20Dehazing%20Examples/jpeg/jpeg1_ourdv.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg1_li.bmp" width="200" onclick="display('jpeg1show','Image%20Dehazing%20Examples/jpeg/jpeg1_li.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg1_chen.png" width="200" onclick="display('jpeg1show','Image%20Dehazing%20Examples/jpeg/jpeg1_chen.png')"></div></td></TR>
+  <TR>
+    <TD>&nbsp;</TD></TR>
+  </TBODY></TABLE>
+
+<TABLE align=center>
+  <TBODY>
+  <TR align=middle>
+    <TD>Haze image</TD>
+    <TD>Dehazing result(click below)</TD></TR>
+  <TR>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg2.jpg" width="700"></div></td>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg2_our.bmp" width="700" img="img" id="jpeg2show"></div></td>
+  </TBODY></TABLE>
+<div align="center">
+<table width="800" border="0">
+  <TBODY>
+  <TR align=middle>
+    <TD>Our final result</TD>
+	<TD>Our direct inversion</TD>
+	<TD>Li</TD>
+    <TD>Chen</TD></TR>
+  <TR>
+  	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg2_our.bmp" width="200" onclick="display('jpeg2show','Image%20Dehazing%20Examples/jpeg/jpeg2_our.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg2_ourdv.bmp" width="200" onclick="display('jpeg2show','Image%20Dehazing%20Examples/jpeg/jpeg2_ourdv.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg2_li.bmp" width="200" onclick="display('jpeg2show','Image%20Dehazing%20Examples/jpeg/jpeg2_li.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg2_chen.png" width="200" onclick="display('jpeg2show','Image%20Dehazing%20Examples/jpeg/jpeg2_chen.png')"></div></td></TR>
+  <TR>
+    <TD>&nbsp;</TD></TR>
+  </TBODY></TABLE>
+
+<TABLE align=center>
+  <TBODY>
+  <TR align=middle>
+    <TD>Haze image</TD>
+    <TD>Dehazing result(click below)</TD></TR>
+  <TR>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg3.jpg" width="700"></div></td>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg3_our.bmp" width="700" img="img" id="jpeg3show"></div></td>
+  </TBODY></TABLE>
+<div align="center">
+<table width="800" border="0">
+  <TBODY>
+  <TR align=middle>
+    <TD>Our final result</TD>
+	<TD>Our direct inversion</TD>
+	<TD>Li</TD>
+    <TD>Chen</TD></TR>
+  <TR>
+  	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg3_our.bmp" width="200" onclick="display('jpeg3show','Image%20Dehazing%20Examples/jpeg/jpeg3_our.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg3_ourdv.bmp" width="200" onclick="display('jpeg3show','Image%20Dehazing%20Examples/jpeg/jpeg3_ourdv.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg3_li.bmp" width="200" onclick="display('jpeg3show','Image%20Dehazing%20Examples/jpeg/jpeg3_li.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg3_chen.png" width="200" onclick="display('jpeg3show','Image%20Dehazing%20Examples/jpeg/jpeg3_chen.png')"></div></td></TR>
+  <TR>
+    <TD>&nbsp;</TD></TR>
+  </TBODY></TABLE>
 
 <P>&nbsp;</P>
 <P>&nbsp;</P></BODY></HTML>
