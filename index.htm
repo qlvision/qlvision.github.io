@@ -22,7 +22,384 @@ rel=stylesheet href="Image%20Dehazing%20Examples/main.css" media=all>
 
 <P>&nbsp;</P>
 <P>&nbsp;</P>
+<p align=left class="auto-style5">Some results of the paper:</p>
+<p align=left class="auto-style5">Q. Liu, X. Gao, L. He and W. Lu, "Single Image Dehazing With Depth-Aware Non-Local Total Variation Regularization," IEEE Trans. Image Process., vol. 27, no. 10, pp. 5178-5191, Oct. 2018.</p>
+<p align=left class="auto-style5"><a href="https://ieeexplore.ieee.org/document/8395282">[Paper]</a></p>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P align=left ><strong><span class="auto-style6">Comparison on synthetic hazy image</span></strong></P>
+<TABLE align=center>
+  <TBODY>
+  <TR align=middle>
+    <TD>Haze image</TD></TR>
+  <TR>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/church/church.bmp" width="700"></div></td></TR>
+  <TR align=middle>
+    <TD>Ground truth haze-free image</TD>
+	<TD>Ground truth transmision map</TD></TR>
+  <TR>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_gt.bmp" width="700"></div></td>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_trans.bmp" width="700"></div></td>
+  <TR align=middle>
+    <TD>Dehazed image(click below)</TD>
+	<TD>Estimated transmision map(click below)</TD></TR>
+  <TR>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_our.bmp" width="700"  img="img" id="chshowr"></div></td>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_our_t.bmp" width="700" img="img" id="chshowt"></div></td>
+  </TBODY></TABLE>
 
+<table align="center">
+  <TBODY>
+  <TR><TD>&nbsp;</TD></TR>
+  <TR align=middle>
+    <TD>Ours</TD>
+	<TD>DCP</TD>
+	<TD>BCCR</TD>
+	<TD>CAP</TD>
+    <TD>DehazeNet</TD>
+	<TD>NLD</TD>
+  <TR>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_our.bmp" width="200" onclick="display('chshowr','Image%20Dehazing%20Examples/church/church_our.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_he.bmp" width="200" onclick="display('chshowr','Image%20Dehazing%20Examples/church/church_he.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_meng.bmp" width="200" onclick="display('chshowr','Image%20Dehazing%20Examples/church/church_meng.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_cap.bmp" width="200" onclick="display('chshowr','Image%20Dehazing%20Examples/church/church_cap.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_cnn.bmp" width="200" onclick="display('chshowr','Image%20Dehazing%20Examples/church/church_cnn.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_nld.bmp" width="200" onclick="display('chshowr','Image%20Dehazing%20Examples/church/church_nld.bmp')"></div></td></TR>
+  <TR>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_our_t.bmp" width="200" onclick="display('chshowt','Image%20Dehazing%20Examples/church/church_our_t.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_he_t.bmp" width="200" onclick="display('chshowt','Image%20Dehazing%20Examples/church/church_he_t.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_meng_t.bmp" width="200" onclick="display('chshowt','Image%20Dehazing%20Examples/church/church_meng_t.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_cap_t.bmp" width="200" onclick="display('chshowt','Image%20Dehazing%20Examples/church/church_cap_t.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_cnn_t.bmp" width="200" onclick="display('chshowt','Image%20Dehazing%20Examples/church/church_cnn_t.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/church/church_nld_t.bmp" width="200" onclick="display('chshowt','Image%20Dehazing%20Examples/church/church_nld_t.bmp')"></div></td></TR>
+  <TR>
+    <TD>&nbsp;</TD></TR>
+  </TBODY></TABLE>
+
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P align=left ><strong><span class="auto-style6">Comparison on dehazed image and transmission</span></strong></P>
+<TABLE align=center>
+  <TBODY>
+  <TR align=middle>
+    <TD>Haze image</TD>
+    <TD>Dehazing result(click below)</TD></TR>
+  <TR>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/tree/tree.jpg" width="700"></div></td>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/tree/tree_our.png" width="700" img="img" id="Treeshow"></div></td>
+  </TBODY></TABLE>
+<table align="center">
+  <TBODY>
+  <TR align=middle>
+    <TD>Ours</TD>
+	<TD>Our trans.</TD>
+	<TD>DCP</TD>
+	<TD>DCP trans.</TD>
+    <TD>BCCR</TD>
+	<TD>BCCR trans.</TD>
+  <TR>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/tree/tree_our.png" width="200" onclick="display('Treeshow','Image%20Dehazing%20Examples/tree/tree_our.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/tree/tree_our-t.png" width="200" onclick="display('Treeshow','Image%20Dehazing%20Examples/tree/tree_our-t.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/tree/tree_he.png" width="200" onclick="display('Treeshow','Image%20Dehazing%20Examples/tree/tree_he.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/tree/tree_he-t.png" width="200" onclick="display('Treeshow','Image%20Dehazing%20Examples/tree/tree_he-t.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/tree/tree_meng.png" width="200" onclick="display('Treeshow','Image%20Dehazing%20Examples/tree/tree_meng.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/tree/tree_meng-t.png" width="200" onclick="display('Treeshow','Image%20Dehazing%20Examples/tree/tree_meng-t.png')"></div></td></TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD></TR>
+  <TR align=middle>
+    <TD>NLD</TD>
+	<TD>NLD trans.</TD>
+    <TD>GRM</TD>
+	<TD>GRM trans.</TD>
+    <TD>GGIF</TD>
+	<TD>GGIF trans.</TD>
+  <TR>
+  	<td><div align="center"><img src="Image%20Dehazing%20Examples/tree/tree_nld.png" width="200" onclick="display('Treeshow','Image%20Dehazing%20Examples/tree/tree_nld.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/tree/tree_nld-t.png" width="200" onclick="display('Treeshow','Image%20Dehazing%20Examples/tree/tree_nld-t.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/tree/tree_chen.png" width="200" onclick="display('Treeshow','Image%20Dehazing%20Examples/tree/tree_chen.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/tree/tree_chen-t.png" width="200" onclick="display('Treeshow','Image%20Dehazing%20Examples/tree/tree_chen-t.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/tree/tree_ggif.png" width="200" onclick="display('Treeshow','Image%20Dehazing%20Examples/tree/tree_ggif.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/tree/tree_ggif-t.png" width="200" onclick="display('Treeshow','Image%20Dehazing%20Examples/tree/tree_ggif-t.png')"></div></td></TR>
+  <TR>
+    <TD>&nbsp;</TD></TR>
+  </TBODY></TABLE>
+
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P align=left><strong><span class="auto-style6">Dense haze removal</span></strong></P>
+<TABLE align=center>
+  <TBODY>
+  <TR align=middle>
+    <TD>Haze image</TD>
+    <TD>Dehazing result(click below)</TD></TR>
+  <TR>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/indonesia-fires.png" width="700"></div></td>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/indonesia-fires_our.png" width="700" img="img" id="Indushow"></div></td>
+  </TBODY></TABLE>
+<div align="center">
+<table width="800" border="0">
+  <TBODY>
+  <TR align=middle>
+    <TD>Input images</TD>
+    <TD>Our result</TD>
+	<TD>DCP</TD>
+    <TD>BCCR</TD>
+    <TD>RF</TD></TR>
+  <TR>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/indonesia-fires.png" width="200" onclick="display('Indushow','Image%20Dehazing%20Examples/indonesia-fires.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/indonesia-fires_our.png" width="200" onclick="display('Indushow','Image%20Dehazing%20Examples/indonesia-fires_our.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/indonesia-fires_he.png" width="200" onclick="display('Indushow','Image%20Dehazing%20Examples/indonesia-fires_he.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/indonesia-fires_meng.png" width="200" onclick="display('Indushow','Image%20Dehazing%20Examples/indonesia-fires_meng.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/indonesia-fires_tang.png" width="200" onclick="display('Indushow','Image%20Dehazing%20Examples/indonesia-fires_tang.png')"></div></td></TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD></TR>
+  <TR align=middle>
+    <TD>CAP</TD>
+    <TD>DehazeNet</TD>
+    <TD>NLD</TD>
+    <TD>GRM</TD>
+    <TD>GGIF</TD>
+  <TR>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/indonesia-fires_cap.png" width="200" onclick="display('Indushow','Image%20Dehazing%20Examples/indonesia-fires_cap.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/indonesia-fires_cnn.png" width="200" onclick="display('Indushow','Image%20Dehazing%20Examples/indonesia-fires_cnn.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/indonesia-fires_nld.png" width="200" onclick="display('Indushow','Image%20Dehazing%20Examples/indonesia-fires_nld.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/indonesia-fires_chen.png" width="200" onclick="display('Indushow','Image%20Dehazing%20Examples/indonesia-fires_chen.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/indonesia-fires_ggif.png" width="200" onclick="display('Indushow','Image%20Dehazing%20Examples/indonesia-fires_ggif.png')"></div></td></TR>
+  <TR>
+    <TD>&nbsp;</TD></TR>
+	</TBODY></TABLE>
+
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P align=left ><strong><span class="auto-style6">JPEG artifact suppression</span></strong></P>
+<TABLE align=center>
+  <TBODY>
+  <TR align=middle>
+    <TD>Haze image</TD>
+    <TD>Dehazing result(click below)</TD></TR>
+  <TR>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg1.jpg" width="700"></div></td>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg1_our.bmp" width="700" img="img" id="jpeg1show"></div></td>
+  </TBODY></TABLE>
+<div align="center">
+<table width="800" border="0">
+  <TBODY>
+  <TR align=middle>
+    <TD>Our final result</TD>
+	<TD>Our direct inversion</TD>
+	<TD>CE</TD>
+    <TD>GRM</TD></TR>
+  <TR>
+  	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg1_our.bmp" width="200" onclick="display('jpeg1show','Image%20Dehazing%20Examples/jpeg/jpeg1_our.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg1_ourdv.bmp" width="200" onclick="display('jpeg1show','Image%20Dehazing%20Examples/jpeg/jpeg1_ourdv.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg1_li.bmp" width="200" onclick="display('jpeg1show','Image%20Dehazing%20Examples/jpeg/jpeg1_li.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg1_chen.png" width="200" onclick="display('jpeg1show','Image%20Dehazing%20Examples/jpeg/jpeg1_chen.png')"></div></td></TR>
+  <TR>
+    <TD>&nbsp;</TD></TR>
+  </TBODY></TABLE>
+
+<TABLE align=center>
+  <TBODY>
+  <TR align=middle>
+    <TD>Haze image</TD>
+    <TD>Dehazing result(click below)</TD></TR>
+  <TR>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg2.jpg" width="700"></div></td>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg2_our.bmp" width="700" img="img" id="jpeg2show"></div></td>
+  </TBODY></TABLE>
+<div align="center">
+<table width="800" border="0">
+  <TBODY>
+  <TR align=middle>
+    <TD>Our final result</TD>
+	<TD>Our direct inversion</TD>
+	<TD>CE</TD>
+    <TD>GRM</TD></TR>
+  <TR>
+  	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg2_our.bmp" width="200" onclick="display('jpeg2show','Image%20Dehazing%20Examples/jpeg/jpeg2_our.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg2_ourdv.bmp" width="200" onclick="display('jpeg2show','Image%20Dehazing%20Examples/jpeg/jpeg2_ourdv.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg2_li.bmp" width="200" onclick="display('jpeg2show','Image%20Dehazing%20Examples/jpeg/jpeg2_li.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg2_chen.png" width="200" onclick="display('jpeg2show','Image%20Dehazing%20Examples/jpeg/jpeg2_chen.png')"></div></td></TR>
+  <TR>
+    <TD>&nbsp;</TD></TR>
+  </TBODY></TABLE>
+
+<TABLE align=center>
+  <TBODY>
+  <TR align=middle>
+    <TD>Haze image</TD>
+    <TD>Dehazing result(click below)</TD></TR>
+  <TR>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg3.jpg" width="700"></div></td>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg3_our.bmp" width="700" img="img" id="jpeg3show"></div></td>
+  </TBODY></TABLE>
+<div align="center">
+<table width="800" border="0">
+  <TBODY>
+  <TR align=middle>
+    <TD>Our final result</TD>
+	<TD>Our direct inversion</TD>
+	<TD>CE</TD>
+    <TD>GRM</TD></TR>
+  <TR>
+  	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg3_our.bmp" width="200" onclick="display('jpeg3show','Image%20Dehazing%20Examples/jpeg/jpeg3_our.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg3_ourdv.bmp" width="200" onclick="display('jpeg3show','Image%20Dehazing%20Examples/jpeg/jpeg3_ourdv.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg3_li.bmp" width="200" onclick="display('jpeg3show','Image%20Dehazing%20Examples/jpeg/jpeg3_li.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/jpeg/jpeg3_chen.png" width="200" onclick="display('jpeg3show','Image%20Dehazing%20Examples/jpeg/jpeg3_chen.png')"></div></td></TR>
+  <TR>
+    <TD>&nbsp;</TD></TR>
+  </TBODY></TABLE>
+
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P align=left><strong><span class="auto-style6">Real-world images</span></strong></P>
+
+<TABLE align=center>
+  <TBODY>
+  <TR align=middle>
+    <TD>Haze image</TD>
+    <TD>Dehazing result(click below)</TD></TR>
+  <TR>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/swan/swan.jpg" width="700"></div></td>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/swan/swan_our.bmp" width="700" img="img" id="swanshow"></div></td>
+  </TBODY></TABLE>
+<div align="center">
+<table width="800" border="0">
+  <TBODY>
+  <TR align=middle>
+    <TD>Our result</TD>
+    <TD>DCP</TD>
+    <TD>BCCR</TD></TR>
+  <TR>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/swan/swan_our.bmp" width="200" onclick="display('swanshow','Image%20Dehazing%20Examples/swan/swan_our.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/swan/swan_he.png" width="200" onclick="display('swanshow','Image%20Dehazing%20Examples/swan/swan_he.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/swan/swan_meng.bmp" width="200" onclick="display('swanshow','Image%20Dehazing%20Examples/swan/swan_meng.bmp')"></div></td></TR>
+  <TR><TD>&nbsp;</TD></TR>
+  <TR align=middle>
+    <TD>CL</TD>
+    <TD>DehazeNet</TD>
+    <TD>NLD</TD></TR>
+  <TR>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/swan/swan_fattal.png" width="200" onclick="display('swanshow','Image%20Dehazing%20Examples/swan/swan_fattal.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/swan/swan_cnn.bmp" width="200" onclick="display('swanshow','Image%20Dehazing%20Examples/swan/swan_cnn.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/swan/swan_nld.jpg" width="200" onclick="display('swanshow','Image%20Dehazing%20Examples/swan/swan_nld.jpg')"></div></td></TR>
+  <TR>
+    <TD>&nbsp;</TD></TR>
+	</TBODY></TABLE>
+
+<TABLE align=center>
+  <TBODY>
+  <TR align=middle>
+    <TD>Haze image</TD>
+    <TD>Dehazing result(click below)</TD></TR>
+  <TR>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/pumpkins/pumpkins.png" width="700"></div></td>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/pumpkins/pumpkins_our.bmp" width="700" img="img" id="pumpkinsshow"></div></td>
+  </TBODY></TABLE>
+<div align="center">
+<table width="800" border="0">
+  <TBODY>
+  <TR align=middle>
+    <TD>Our result</TD>
+    <TD>DCP</TD>
+    <TD>BCCR</TD></TR>
+  <TR>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/pumpkins/pumpkins_our.bmp" width="200" onclick="display('pumpkinsshow','Image%20Dehazing%20Examples/pumpkins/pumpkins_our.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/pumpkins/pumpkins_he.png" width="200" onclick="display('pumpkinsshow','Image%20Dehazing%20Examples/pumpkins/pumpkins_he.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/pumpkins/pumpkins_meng.bmp" width="200" onclick="display('pumpkinsshow','Image%20Dehazing%20Examples/pumpkins/pumpkins_meng.bmp')"></div></td></TR>
+  <TR><TD>&nbsp;</TD></TR>
+  <TR align=middle>
+    <TD>CL</TD>
+    <TD>DehazeNet</TD>
+    <TD>NLD</TD></TR>
+  <TR>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/pumpkins/pumpkins_fattal.png" width="200" onclick="display('pumpkinsshow','Image%20Dehazing%20Examples/pumpkins/pumpkins_fattal.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/pumpkins/pumpkins_cnn.bmp" width="200" onclick="display('pumpkinsshow','Image%20Dehazing%20Examples/pumpkins/pumpkins_cnn.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/pumpkins/pumpkins_nld.jpg" width="200" onclick="display('pumpkinsshow','Image%20Dehazing%20Examples/pumpkins/pumpkins_nld.jpg')"></div></td></TR>
+  <TR>
+    <TD>&nbsp;</TD></TR>
+	</TBODY></TABLE>
+
+<TABLE align=center>
+  <TBODY>
+  <TR align=middle>
+    <TD>Haze image</TD>
+    <TD>Dehazing result(click below)</TD></TR>
+  <TR>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/ny17/ny17.png" width="700"></div></td>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/ny17/ny17_our.bmp" width="700" img="img" id="ny17show"></div></td>
+  </TBODY></TABLE>
+<div align="center">
+<table width="800" border="0">
+  <TBODY>
+  <TR align=middle>
+    <TD>Our result</TD>
+    <TD>DCP</TD>
+    <TD>BCCR</TD></TR>
+  <TR>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/ny17/ny17_our.bmp" width="200" onclick="display('ny17show','Image%20Dehazing%20Examples/ny17/ny17_our.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/ny17/ny17_he.png" width="200" onclick="display('ny17show','Image%20Dehazing%20Examples/ny17/ny17_he.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/ny17/ny17_meng.bmp" width="200" onclick="display('ny17show','Image%20Dehazing%20Examples/ny17/ny17_meng.bmp')"></div></td></TR>
+  <TR><TD>&nbsp;</TD></TR>
+  <TR align=middle>
+    <TD>CL</TD>
+    <TD>DehazeNet</TD>
+    <TD>NLD</TD></TR>
+  <TR>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/ny17/ny17_fattal.png" width="200" onclick="display('ny17show','Image%20Dehazing%20Examples/ny17/ny17_fattal.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/ny17/ny17_cnn.bmp" width="200" onclick="display('ny17show','Image%20Dehazing%20Examples/ny17/ny17_cnn.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/ny17/ny17_nld.jpg" width="200" onclick="display('ny17show','Image%20Dehazing%20Examples/ny17/ny17_nld.jpg')"></div></td></TR>
+  <TR>
+    <TD>&nbsp;</TD></TR>
+	</TBODY></TABLE>
+
+<TABLE align=center>
+  <TBODY>
+  <TR align=middle>
+    <TD>Haze image</TD>
+    <TD>Dehazing result(click below)</TD></TR>
+  <TR>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/y01/y01.png" width="700"></div></td>
+  <td><div align="center"><img src="Image%20Dehazing%20Examples/y01/y01_our.bmp" width="700" img="img" id="y01show"></div></td>
+  </TBODY></TABLE>
+<div align="center">
+<table width="800" border="0">
+  <TBODY>
+  <TR align=middle>
+    <TD>Our result</TD>
+    <TD>DCP</TD>
+    <TD>BCCR</TD></TR>
+  <TR>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/y01/y01_our.bmp" width="200" onclick="display('y01show','Image%20Dehazing%20Examples/y01/y01_our.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/y01/y01_he.png" width="200" onclick="display('y01show','Image%20Dehazing%20Examples/y01/y01_he.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/y01/y01_meng.bmp" width="200" onclick="display('y01show','Image%20Dehazing%20Examples/y01/y01_meng.bmp')"></div></td></TR>
+  <TR><TD>&nbsp;</TD></TR>
+  <TR align=middle>
+    <TD>CL</TD>
+    <TD>DehazeNet</TD>
+    <TD>NLD</TD></TR>
+  <TR>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/y01/y01_fattal.png" width="200" onclick="display('y01show','Image%20Dehazing%20Examples/y01/y01_fattal.png')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/y01/y01_cnn.bmp" width="200" onclick="display('y01show','Image%20Dehazing%20Examples/y01/y01_cnn.bmp')"></div></td>
+	<td><div align="center"><img src="Image%20Dehazing%20Examples/y01/y01_nld.jpg" width="200" onclick="display('y01show','Image%20Dehazing%20Examples/y01/y01_nld.jpg')"></div></td></TR>
+  <TR>
+    <TD>&nbsp;</TD></TR>
+	</TBODY></TABLE>
+
+<P>&nbsp;</P>
+<P align=left><strong><span class="auto-style6">References</span></strong></P>
+<p align=left class="auto-style5">[DCP] K. He, J. Sun, and X. Tang, “Single image haze removal using dark channel prior,” IEEE Trans. Pattern Anal. Mach. Intell., vol. 33, no. 12, pp. 2341-2353, 2011.</p>
+<p align=left class="auto-style5">[BCCR] G. Meng, Y. Wang, J. Duan, S. Xiang, and C. Pan, “Efficient image dehazing with boundary constraint and contextual regularization,” in Proc. IEEE Int. Conf. Comput. Vis. (ICCV), Dec. 2013, pp. 617-624.</p>
+<p align=left class="auto-style5">[CAP] Q. Zhu, J. Mai, and L. Shao, “A fast single image haze removal algorithm using color attenuation prior,” IEEE Trans. Image Process., vol. 24, no. 11, pp. 3522–3533, Nov. 2015.</p>
+<p align=left class="auto-style5">[DehazeNet] B. Cai, X. Xu, K. Jia, C. Qing and D. Tao, "DehazeNet: An End-to-End System for Single Image Haze Removal," IEEE Trans. Image Process., vol. 25, no. 11, pp. 5187-5198, Nov. 2016.</p>
+<p align=left class="auto-style5">[NLD] D. Berman, T. Treibitz, and S. Avidan, “Non-local image dehazing,” in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), 2016.</p>
+<p align=left class="auto-style5">[GRM] C. Chen, M. N. Do, and J. Wang, “Robust image and video dehazing with visual artifact suppression via gradient residual minimization,” in Proc. Eur. Conf. Comput. Vis., 2016, pp. 576–591.</p>
+<p align=left class="auto-style5">[GGIF] Z. Li, J. Zheng, “Single Image De-Hazing Using Globally Guided Image Filtering” IEEE Trans. Image Process., vol. 27, no. 1, pp. 442–450, Jan. 2018.</p>
+<p align=left class="auto-style5">[RF] K. Tang, J. Yang, and J. Wang. "Investigating Haze-relevant Features in A Learning Framework for Image Dehazing." in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), 2014.</p>
+<p align=left class="auto-style5">[CE] Y. Li, F. Guo, R. T. Tan, and M. S. Brown, “A contrast enhancement framework with JPEG artifacts suppression,” in Proc. Eur. Conf. Comput. Vis., 2014, pp. 174-188.</p>
+<p align=left class="auto-style5">[CL] R. Fattal, “Dehazing using color-lines,” ACM Trans. Graph., vol. 34, no. 1, Dec. 2014, Art. ID 13.</p>
 
 <P>&nbsp;</P>
 <P>&nbsp;</P></BODY></HTML>
